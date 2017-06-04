@@ -37,6 +37,14 @@ class MyDatabase extends \sqlayr\Database
 _Available Methods:_
 
 ### Public Method: Execute ###
+
+###### PARAMETERS: ######
+String (SQL Statement)
+
+###### RETURN: ######
+Integer (Affected Rows)
+
+###### EXAMPLE ######
 ```PHP
 $db = MyDatabase::shared();
 $affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');
@@ -44,19 +52,27 @@ $affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');
 
 ### Public Method: Insert ###
 
-###### PARAMETERS ######
+###### PARAMETERS: ######
 String (SQL Statement)
 
-###### RETURN ######
+###### RETURN: ######
 Integer (Insert ID)
 
-###### EXAMPLE ######
+###### EXAMPLE: ######
 ```PHP
 $db = MyDatabase::shared();
 $insertId = $db->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
 ```
 
 ### Public Method: Fetch ###
+
+###### PARAMETERS: ######
+String (SQL Statement)
+
+###### RETURN: ######
+Array (Record Assocs)
+
+###### EXAMPLE: ######
 ```PHP
 $db = MyDatabase::shared();
 $rows = $db->fetch('SELECT * FROM `test`;');

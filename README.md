@@ -169,7 +169,7 @@ Integer (Affected Rows)
 ###### EXAMPLE: ######
 ```PHP
 $tbl = MyTable::shared();
-$rows = $tbl->updateRowByColumn('last','Testerson','first','Testy');
+$affected = $tbl->updateRowByColumn('last','Testerson','first','Testy');
 ```
 
 ### Public Method: Update Row By Id ###
@@ -185,5 +185,5 @@ Integer (Affected Rows)
 ###### EXAMPLE: ######
 ```PHP
 $tbl = MyTable::shared();
-$row = $tbl->updateRowById(1,'first','Testy');
+$affected = $tbl->updateRowById(1,'first','Testy');
 ```

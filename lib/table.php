@@ -27,7 +27,7 @@ abstract class Table
   /** @method constructor **/
   public function __construct()
   {
-    $cols = array('id','created','updated','deleted');
+    $cols = array('id','created','updated');
     foreach ($this->columns as $column) {
       array_push($cols,$column);
     }

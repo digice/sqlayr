@@ -48,7 +48,7 @@ Integer (Affected Rows)
 ###### EXAMPLE: ######
 ```PHP
 $db = MyDatabase::shared();
-$affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');
+$affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value#>;');
 ```
 
 ### Public Method: Insert ###
@@ -155,3 +155,35 @@ $tbl = MyTable::shared();
 $row = $tbl->fetchRowById(1);
 ```
 
+### Public Method: Update Rows By Column ###
+
+###### PARAMETERS: ######
+String (Match Column Name)
+Any (Match Value)
+String (Set Column Name)
+Any (Set Column Value)
+
+###### RETURN: ######
+Integer (Affected Rows)
+
+###### EXAMPLE: ######
+```PHP
+$tbl = MyTable::shared();
+$rows = $tbl->updateRowByColumn('last','Testerson','first','Testy');
+```
+
+### Public Method: Update Row By Id ###
+
+###### PARAMETERS: ######
+Integer (ID)
+String (Set Column Name)
+Any (Set Column Value)
+
+###### RETURN: ######
+Integer (Affected Rows)
+
+###### EXAMPLE: ######
+```PHP
+$tbl = MyTable::shared();
+$row = $tbl->updateRowById(1,'first','Testy');
+```

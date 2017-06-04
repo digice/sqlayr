@@ -203,7 +203,7 @@ Integer (Affected Rows)
 ###### EXAMPLE: ######
 ```PHP
 $tbl = MyTable::shared();
-$affected = $tbl->deleteRowsByColumn('last','Testerson','first','Testy');
+$affected = $tbl->deleteRowsByColumn('last','Testerson');
 ```
 
 ### Delete Row By Id ###

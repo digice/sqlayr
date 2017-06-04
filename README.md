@@ -37,7 +37,7 @@ class MyDatabase extends \sqlayr\Database
 
 _Available Methods:_
 
-### Public Method: Execute ###
+### Execute ###
 
 ###### PARAMETERS: ######
 String (SQL Statement)
@@ -51,7 +51,7 @@ $db = MyDatabase::shared();
 $affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value#>;');
 ```
 
-### Public Method: Insert ###
+### Insert ###
 
 ###### PARAMETERS: ######
 String (SQL Statement)
@@ -65,7 +65,7 @@ $db = MyDatabase::shared();
 $insertId = $db->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
 ```
 
-### Public Method: Fetch ###
+### Fetch ###
 
 ###### PARAMETERS: ######
 String (SQL Statement)
@@ -79,7 +79,7 @@ $db = MyDatabase::shared();
 $rows = $db->fetch('SELECT * FROM `test`;');
 ```
 #   #
-## Class Reference: Table ##
+## Table ##
 
 _Extend the Table class:_
 
@@ -112,7 +112,7 @@ class MyTable extends \sqlayr\Table
 
 _Available Methods:_
 
-### Public Method: Insert Row ###
+### Insert Row ###
 
 ###### PARAMETERS: ######
 Array (Record Assoc)
@@ -126,7 +126,7 @@ $tbl = MyTable::shared();
 $id = $tbl->insertRow(array('first' => 'Test','last' => 'Testerson'));
 ```
 
-### Public Method: Fetch Rows By Column ###
+### Fetch Rows By Column ###
 
 ###### PARAMETERS: ######
 String (Column Name)
@@ -141,7 +141,7 @@ $tbl = MyTable::shared();
 $rows = $tbl->fetchRowsByColumn('last','Testerson');
 ```
 
-### Public Method: Fetch Row By Id ###
+### Fetch Row By Id ###
 
 ###### PARAMETERS: ######
 Integer (ID)
@@ -155,7 +155,7 @@ $tbl = MyTable::shared();
 $row = $tbl->fetchRowById(1);
 ```
 
-### Public Method: Update Rows By Column ###
+### Update Rows By Column ###
 
 ###### PARAMETERS: ######
 String (Match Column Name)
@@ -169,10 +169,10 @@ Integer (Affected Rows)
 ###### EXAMPLE: ######
 ```PHP
 $tbl = MyTable::shared();
-$affected = $tbl->updateRowByColumn('last','Testerson','first','Testy');
+$affected = $tbl->updateRowsByColumn('last','Testerson','first','Testy');
 ```
 
-### Public Method: Update Row By Id ###
+### Update Row By Id ###
 
 ###### PARAMETERS: ######
 Integer (ID)
@@ -186,4 +186,33 @@ Integer (Affected Rows)
 ```PHP
 $tbl = MyTable::shared();
 $affected = $tbl->updateRowById(1,'first','Testy');
+```
+
+### Delete Rows By Column ###
+
+###### PARAMETERS: ######
+String (Match Column Name)
+Any (Match Value)
+
+###### RETURN: ######
+Integer (Affected Rows)
+
+###### EXAMPLE: ######
+```PHP
+$tbl = MyTable::shared();
+$affected = $tbl->deleteRowsByColumn('last','Testerson','first','Testy');
+```
+
+### Delete Row By Id ###
+
+###### PARAMETERS: ######
+Integer (ID)
+
+###### RETURN: ######
+Integer (Affected Rows)
+
+###### EXAMPLE: ######
+```PHP
+$tbl = MyTable::shared();
+$affected = $tbl->deleteRowById(1);
 ```

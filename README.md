@@ -2,6 +2,7 @@
 
 _MySQL Database Wrapper for PHP using PDO_
 
+#   #
 ## Class Reference: Database ##
 
 _Extend the Database class:_
@@ -77,7 +78,7 @@ Array (Record Assocs)
 $db = MyDatabase::shared();
 $rows = $db->fetch('SELECT * FROM `test`;');
 ```
-
+#   #
 ## Class Reference: Table ##
 
 _Extend the Table class:_

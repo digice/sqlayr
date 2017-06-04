@@ -44,7 +44,7 @@ String (SQL Statement)
 ###### RETURN: ######
 Integer (Affected Rows)
 
-###### EXAMPLE ######
+###### EXAMPLE: ######
 ```PHP
 $db = MyDatabase::shared();
 $affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');

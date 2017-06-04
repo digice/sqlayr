@@ -2,6 +2,9 @@
 
 _MySQL Database Wrapper for PHP using PDO_
 
+- Author: Roderic Linguri <linguri@digices.com>
+- Copyright: 2017 Digices LLC
+
 #   #
 ## Class Reference: Database ##
 

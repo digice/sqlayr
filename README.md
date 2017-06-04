@@ -38,16 +38,19 @@ _Available Methods:_
 
 ### Public Method: Execute ###
 ```PHP
-$affected_rows = MyDatabase->execute('UPDATE `test` SET <#column#> = <#value>;');
+$db = MyDatabase::shared();
+$affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');
 ```
 
 ### Public Method: Insert ###
 ```PHP
-$insertId = MyDatabase->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
+$db = MyDatabase::shared();
+$insertId = $db->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
 ```
 
 ### Public Method: Fetch ###
 ```PHP
-$rows = MyDatabase->fetch('SELECT * FROM `test`;');
+$db = MyDatabase::shared();
+$rows = $db->fetch('SELECT * FROM `test`;');
 ```
 

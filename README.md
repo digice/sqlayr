@@ -43,6 +43,14 @@ $affected_rows = $db->execute('UPDATE `test` SET <#column#> = <#value>;');
 ```
 
 ### Public Method: Insert ###
+
+###### PARAMETERS ######
+String (SQL Statement)
+
+###### RETURN ######
+Integer (Insert ID)
+
+###### EXAMPLE ######
 ```PHP
 $db = MyDatabase::shared();
 $insertId = $db->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');

@@ -9,7 +9,7 @@ _MySQL Database Wrapper for PHP using PDO_
 ###### CLASS REFERENCE ######
 ## Database ##
 
-_Extend the Database class:_
+_Example Implementation:_
 
 ```PHP
 class MyDatabase extends \sqlayr\Database
@@ -92,7 +92,7 @@ $rows = $db->fetch('SELECT * FROM `test`;');
 ###### CLASS REFERENCE ######
 ## Table ##
 
-_Extend the Table class:_
+_Example Implementation:_
 
 ```PHP
 class MyTable extends \sqlayr\Table

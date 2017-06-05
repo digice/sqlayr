@@ -37,12 +37,13 @@ class MyDatabase extends \sqlayr\Database
 
 } // ./MyDatabase
 ```
-
+---
 _Available Properties:_
 
 ### Error ###
 String (PDOException description)
 
+---
 _Available Methods:_
 
 ### Execute ###
@@ -118,11 +119,13 @@ class MyTable extends \sqlayr\Table
 } // ./MyDatabase
 ```
 
+---
 _Available Properties:_
 
 ### Error ###
 String (PDOException description)
 
+---
 _Available Methods:_
 
 ### Insert Row ###

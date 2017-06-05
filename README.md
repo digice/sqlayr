@@ -128,6 +128,8 @@ Integer (ID of inserted row)
 $tbl = MyTable::shared();
 $id = $tbl->insertRow(array('first' => 'Test','last' => 'Testerson'));
 ```
+###### NOTE: ######
+_If no values for columns `created` and/or `updated` are provided, these will get set automatically_
 
 ### Fetch Rows By Column ###
 

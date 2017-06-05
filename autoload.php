@@ -9,14 +9,17 @@
 
 /** Autoload **/
 
-$sql_dir = __DIR__.DIRECTORY_SEPARATOR.'lib';
+namespace sqlayr;
 
-$sql_itr = new DirectoryIterator($sql_dir);
-
-foreach ($sql_itr as $item) {
-  $file = $item->getFilename();
-  if (substr($file,0,1) != '.') {
-    $path = $sql_dir.DIRECTORY_SEPARATOR.$file;
-    require_once($path);
+function load_lib() {
+  $path = __DIR__.DIRECTORY_SEPARATOR.'lib';
+  $di = new \DirectoryIterator($path);
+  foreach ($di as $item) {
+    $fn = $item->getFilename();
+    if (substr($fn, 0, 1) != '.') {
+      require_once $path.DIRECTORY_SEPARATOR.$fn;
+    }
   }
 }
+
+\sqlayr\load_lib();

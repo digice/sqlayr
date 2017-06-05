@@ -5,8 +5,9 @@ _MySQL Database Wrapper for PHP using PDO_
 - Author: Roderic Linguri <linguri@digices.com>
 - Copyright: 2017 Digices LLC
 
-#   #
-## Class Reference: Database ##
+---
+###### CLASS REFERENCE ######
+## Database ##
 
 _Extend the Database class:_
 
@@ -87,7 +88,8 @@ Array (Record Assocs)
 $db = MyDatabase::shared();
 $rows = $db->fetch('SELECT * FROM `test`;');
 ```
-#   #
+---
+###### CLASS REFERENCE ######
 ## Table ##
 
 _Extend the Table class:_

@@ -118,7 +118,7 @@ class MyTable extends \sqlayr\Table
     parent::__construct();
   } // ./construct
 
-} // ./MyDatabase
+} // ./MyTable
 ```
 
 ---

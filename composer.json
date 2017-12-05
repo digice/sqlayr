@@ -1,0 +1,13 @@
+{
+    "name": "digices/sqlayr",
+    "description": "MySQL Database Wrapper for PHP using PDO",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roderic Linguri",
+            "email": "linguri@digices.com"
+        }
+    ],
+    "require": {}
+}

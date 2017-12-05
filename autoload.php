@@ -9,7 +9,7 @@
 
 /** Autoload **/
 
-namespace sqlayr;
+namespace digices\sqlayr;
 
 function load_src() {
   $path = __DIR__.DIRECTORY_SEPARATOR.'src';
@@ -22,4 +22,4 @@ function load_src() {
   }
 }
 
-\sqlayr\load_src();
+\digices\sqlayr\load_src();

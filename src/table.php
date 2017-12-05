@@ -7,7 +7,7 @@
  * @license   MIT
  */
 
-namespace sqlayr;
+namespace digices\sqlayr;
 
 abstract class Table
 {

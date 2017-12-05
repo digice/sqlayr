@@ -64,7 +64,7 @@ abstract class Table
     * @return mixed (assoc)
     **/
   public function fetchAll() {
-    $sql = "SELECT * FROM `".$this->name.";";
+    $sql = "SELECT * FROM `".$this->name."`;";
     if ($res = $this->database->fetch($sql)) {
       return $res;
     } else {

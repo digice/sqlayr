@@ -11,8 +11,8 @@
 
 namespace sqlayr;
 
-function load_lib() {
-  $path = __DIR__.DIRECTORY_SEPARATOR.'lib';
+function load_src() {
+  $path = __DIR__.DIRECTORY_SEPARATOR.'src';
   $di = new \DirectoryIterator($path);
   foreach ($di as $item) {
     $fn = $item->getFilename();
@@ -22,4 +22,4 @@ function load_lib() {
   }
 }
 
-\sqlayr\load_lib();
+\sqlayr\load_src();

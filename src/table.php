@@ -60,6 +60,19 @@ abstract class Table
     return $this->database->insert($sql);
   } // ./insertRow
 
+  /** @method Fetch All
+    * @return mixed (assoc)
+    **/
+  public function fetchAll() {
+    $sql = "SELECT * FROM `".$this->name.";";
+    if ($res = $this->database->fetch($sql)) {
+      return $res;
+    } else {
+      $this->error = $this->database->error;
+      return false;
+    }
+  } // ./fetchAll
+
   /** @method Fetch Rows By Column
     * @param  string (column name)
     * @param  any (match value)

@@ -12,7 +12,7 @@ _MySQL Database Wrapper for PHP using PDO_
 _Example Implementation:_
 
 ```PHP
-class MyDatabase extends \sqlayr\Database
+class MyDatabase extends \digices\sqlayr\Database
 {
   /** @property MyDatabase (instance) **/
   protected static $shared;
@@ -95,7 +95,7 @@ $rows = $db->fetch('SELECT * FROM `test`;');
 _Example Implementation:_
 
 ```PHP
-class MyTable extends \sqlayr\Table
+class MyTable extends \digices\sqlayr\Table
 {
   /** @property MyTable (instance) **/
   protected static $shared;

@@ -1,5 +1,5 @@
 {
-    "name": "digices/sqlayr",
+    "name": "digice/sqlayr",
     "description": "MySQL Database Wrapper for PHP using PDO",
     "type": "library",
     "license": "MIT",

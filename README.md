@@ -100,7 +100,7 @@ class MyTable extends \digices\sqlayr\Table
   /** @property MyTable (instance) **/
   protected static $shared;
 
-  /** @method MyDatabase (getter) **/
+  /** @method MyTable (getter) **/
   public static function shared()
   {
     if (!isset(self::$shared)) {

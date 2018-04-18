@@ -3,11 +3,20 @@
     "description": "MySQL Database Wrapper for PHP using PDO",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "mysql"
+    ],
     "authors": [
         {
             "name": "Roderic Linguri",
             "email": "linguri@digices.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "digices\\sqlayr\\": "src"
+        }
+    }
 }
